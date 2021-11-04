@@ -1,0 +1,67 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	int age;
+	cout << "Kindly enter your age:";
+	cin >> age;
+		if (cin.fail())
+	{
+		cin.clear();
+		cin.ignore();
+		cout << "Kindly input correct value" << endl;
+	}
+	//to check if the age is from 16-30 only
+	else if (age >= 16 && age <= 30);
+	{
+		cout << "You are not eligible to proceed with the activities" << endl;
+	}
+	if (age >= 16 && age <= 21)   
+	{
+		cout << "Would you like to go the mall?" << endl;
+		cout << "Enter y if you want to go" << endl;
+		cout << "Enter n if you dont want to go" << endl;
+		char input{};
+		cin >> input;
+
+		switch (input)
+		{
+		case 'Y':
+		case 'y':
+			cout << "Enjoy" << endl;
+			break;
+
+		case 'N':
+		case 'n':
+			cout << "Cancelled" << endl;
+			break;
+		}
+	if (age >= 22 && age <= 30)
+		{
+			cout << "Would you like a trip to Hawaii?" << endl;
+			cout << "Enter y if you want to go" << endl;
+			cout << "Enter n if you dont want to go" << endl;
+			char input{};
+			cin >> input;
+
+			switch (input)
+			{
+			case 'Y':
+			case 'y':
+				cout << "Enjoy" << endl;
+				break;
+
+			case 'N':
+			case 'n':
+				cout << "Cancelled" << endl;
+				break;
+		
+
+
+		default:
+			cout << "This input is invalid" << endl;
+		}
+	}
+ }
+}
